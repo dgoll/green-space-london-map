@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>London Greenspace Walking Time</title>
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl/dist/maplibre-gl.css" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <div id="map"></div>
+
+  <div id="controls">
+    <h3>Minimum greenspace size</h3>
+    <input id="size-slider" type="range" min="10000" max="200000" step="500" value="10000" />
+    <div id="slider-labels">
+      <span data-value="10000">1 ha</span>
+      <span data-value="50000">5 ha</span>
+      <span data-value="100000">10 ha</span>
+      <span data-value="200000">20 ha</span>
+    </div>
+    <div id="slider-value">All greenspaces</div>
+
+    <label id="greenspace-toggle">
+      <input type="checkbox" id="show-greenspaces" checked />
+      Show greenspaces
+    </label>
+  </div>
+
+  <div id="legend">
+    <h4>Walking time to nearest greenspace</h4>
+    <div id="legend-items"></div>
+  </div>
+
+  <div id="loading">Computing isochrones...</div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
