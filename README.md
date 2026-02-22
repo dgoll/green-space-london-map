@@ -4,10 +4,6 @@ Interactive map showing how far Londoners are from greenspace, visualised as iso
 
 A slider lets you set a minimum greenspace size, so small pocket parks can be excluded to see access to larger green areas.
 
-## Screenshot
-
-![screenshot](screenshot.png)
-
 ## How it works
 
 1. **Data prep** — a Python script downloads [OS Open Greenspace](https://www.ordnancesurvey.co.uk/products/os-open-greenspace) (free, no API key) and clips it to the Greater London boundary
